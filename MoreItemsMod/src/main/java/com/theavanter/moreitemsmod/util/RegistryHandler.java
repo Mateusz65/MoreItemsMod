@@ -25,6 +25,8 @@ public class RegistryHandler
 	
 	//Items
 	public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
+	public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword", ItemBase::new);
+
 	
 	//Blocks
 	public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
