@@ -1,7 +1,5 @@
 package com.theavanter.moreitemsmod.blocks;
 
-import com.theavanter.moreitemsmod.util.RegistryHandler;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
