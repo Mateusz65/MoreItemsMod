@@ -1,9 +1,8 @@
 package com.theavanter.moreitemsmod.util;
 
 import com.theavanter.moreitemsmod.MoreItemsMod;
-import com.theavanter.moreitemsmod.blocks.BlockItemBase;
-import com.theavanter.moreitemsmod.blocks.RubyBlock;
-import com.theavanter.moreitemsmod.items.ItemBase;
+import com.theavanter.moreitemsmod.blocks.*;
+import com.theavanter.moreitemsmod.items.*;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -29,9 +28,11 @@ public class RegistryHandler
 	
 	//Blocks
 	public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
+	public static final RegistryObject<Block> RUBY_ORE_BLOCK = BLOCKS.register("ruby_ore_block", RubyOreBlock::new);
 
 	
 	//Block Items
 	public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
+	public static final RegistryObject<Item> RUBY_BLOCK_ORE_ITEM = ITEMS.register("ruby_ore_block", () -> new BlockItemBase(RUBY_ORE_BLOCK.get()));
 	
 }
