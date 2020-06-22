@@ -1,3 +1,5 @@
 {
-	"item.mim.ruby" : "Ruby"
+	"item.mim.ruby" : "Ruby",
+	"block.mim.ruby_block" : "Ruby Block",
+	"itemGroup.mimTab" : "More Items"
 }
