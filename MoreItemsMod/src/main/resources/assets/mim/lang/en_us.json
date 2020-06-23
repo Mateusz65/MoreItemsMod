@@ -2,6 +2,7 @@
 	"item.mim.ruby" : "Ruby",
 	"item.mim.ruby_dust" : "Ruby Dust",
 	"item.mim.ruby_sword" : "Ruby Sword",
+	"item.mim.ruby_pickaxe" : "Ruby Pickaxe",
 	"block.mim.ruby_block" : "Ruby Block",
 	"block.mim.ruby_ore_block" : "Ruby Ore",
 	"itemGroup.mimTab" : "More Items"

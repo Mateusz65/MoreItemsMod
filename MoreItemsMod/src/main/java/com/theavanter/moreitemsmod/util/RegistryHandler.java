@@ -3,11 +3,9 @@ package com.theavanter.moreitemsmod.util;
 import com.theavanter.moreitemsmod.MoreItemsMod;
 import com.theavanter.moreitemsmod.blocks.*;
 import com.theavanter.moreitemsmod.items.*;
-import com.theavanter.moreitemsmod.items.ItemBase.MimItemTier;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -29,8 +27,10 @@ public class RegistryHandler
 	//Items
 	public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
 	public static final RegistryObject<Item> RUBY_DUST = ITEMS.register("ruby_dust", ItemBase::new);
-	public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword", () -> new SwordItem(MimItemTier.RUBY, 1, 1.0F, new Item.Properties().group(MoreItemsMod.TAB)));
+	public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword", () -> new SwordItemBase(ItemTier.RUBY, ItemTier.RUBY.getAttackDamage(), -1.9F));
+	public static final RegistryObject<Item> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe", () -> new PickaxeItemBase(ItemTier.RUBY, -2.0F, -2.0F));
 
+	
 	
 	//Blocks
 	public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
