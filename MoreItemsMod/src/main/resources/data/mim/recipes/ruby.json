@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xdx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "mim:ruby_dust"
+    },
+	"d":
+	{
+	"item": "minecraft:diamond"
+	}
+  },
+  "result":
+  {
+    "item": "mim:ruby",
+    "count": 1
+  }
+}

@@ -3,9 +3,11 @@ package com.theavanter.moreitemsmod.util;
 import com.theavanter.moreitemsmod.MoreItemsMod;
 import com.theavanter.moreitemsmod.blocks.*;
 import com.theavanter.moreitemsmod.items.*;
+import com.theavanter.moreitemsmod.items.ItemBase.MimItemTier;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,6 +18,7 @@ public class RegistryHandler
 	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, MoreItemsMod.MOD_ID);
 	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, MoreItemsMod.MOD_ID);
 
+	
 	public static void init()
 	{
 		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
@@ -25,7 +28,8 @@ public class RegistryHandler
 	
 	//Items
 	public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
-	public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword", ItemBase::new);
+	public static final RegistryObject<Item> RUBY_DUST = ITEMS.register("ruby_dust", ItemBase::new);
+	public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword", () -> new SwordItem(MimItemTier.RUBY, 1, 1.0F, new Item.Properties().group(MoreItemsMod.TAB)));
 
 	
 	//Blocks

@@ -10,9 +10,9 @@ public class RubyOreBlock extends Block
 	
 	public RubyOreBlock() 
 	{
-		super(Block.Properties.create(Material.IRON)
+		super(Block.Properties.create(Material.ROCK)
 				.hardnessAndResistance(5.0f, 6.0f)
-				.sound(SoundType.METAL)
+				.sound(SoundType.STONE)
 				.harvestLevel(2)
 				.harvestTool(ToolType.PICKAXE)
 				);
