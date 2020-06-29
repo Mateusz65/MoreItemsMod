@@ -27,7 +27,7 @@ public class RegistryHandler
 	//Items
 	public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
 	public static final RegistryObject<Item> RUBY_DUST = ITEMS.register("ruby_dust", ItemBase::new);
-	public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword", () -> new SwordItemBase(ItemTier.RUBY, 3.4f, -1.9F));
+	public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword", () -> new SwordItemBase(ItemTier.RUBY, 3.7f, -1.9F));
 	public static final RegistryObject<Item> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe", () -> new PickaxeItemBase(ItemTier.RUBY, -2.0F, -2.0F));
 	public static final RegistryObject<Item> RUBY_AXE = ITEMS.register("ruby_axe", () -> new AxeItemBase(ItemTier.RUBY, 4.0f, -1.0f));
 
