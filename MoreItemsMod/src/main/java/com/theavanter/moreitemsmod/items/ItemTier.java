@@ -25,62 +25,62 @@ public enum ItemTier implements IItemTier
 	
 	
 	//Tier Object
-	private final int harvestLevel;
-	private final int maxUses;
-	private final float efficiency;
-	private final float attackDamage;
-	private final int enchantibility;
-	private final LazyValue<Ingredient> repairMaterial;
+	private final int HARVEST_LEVEL;
+	private final int MAXUSES;
+	private final float EFFICIENCY;
+	private final float ATTACK_DAMAGE;
+	private final int ECHANTABILITY;
+	private final LazyValue<Ingredient> REPAIR_MATERIAL;
 
 
 	private ItemTier(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantibility, Supplier<Ingredient> repairMaterial)
 	{
-		this.harvestLevel= harvestLevel;
-		this.maxUses = maxUses;
-		this.efficiency = efficiency;
-		this.attackDamage = attackDamage;
-		this.enchantibility = enchantibility;
-		this.repairMaterial = new LazyValue<>(repairMaterial);
+		this.HARVEST_LEVEL= harvestLevel;
+		this.MAXUSES = maxUses;
+		this.EFFICIENCY = efficiency;
+		this.ATTACK_DAMAGE = attackDamage;
+		this.ECHANTABILITY = enchantibility;
+		this.REPAIR_MATERIAL = new LazyValue<>(repairMaterial);
 	}
 
 	@Override
 	public int getHarvestLevel() 
 	{
-		return harvestLevel;
+		return HARVEST_LEVEL;
 	}
 
 
 	@Override
 	public int getMaxUses() 
 	{
-		return maxUses;
+		return MAXUSES;
 	}
 
 
 	@Override
 	public float getEfficiency() 
 	{
-		return efficiency;
+		return EFFICIENCY;
 	}
 
 
 	@Override
 	public float getAttackDamage() 
 	{
-		return attackDamage;
+		return ATTACK_DAMAGE;
 	}
 
 
 	@Override
 	public int getEnchantability()
 	{
-		return enchantibility;
+		return ECHANTABILITY;
 	}
 
 
 	@Override
 	public Ingredient getRepairMaterial() 
 	{
-		return repairMaterial.getValue();
+		return REPAIR_MATERIAL.getValue();
 	}
 }
