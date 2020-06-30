@@ -9,6 +9,9 @@
 	"item.mim.ruby_shovel" : "Ruby Shovel",
 	"item.mim.ruby_hoe" : "Ruby Hoe",
 	
+//Armour
+	"item.mim.ruby_helmet" : "Ruby Helmet",
+
 //Blocks
 	"block.mim.ruby_block" : "Ruby Block",
 	"block.mim.ruby_ore_block" : "Ruby Ore",

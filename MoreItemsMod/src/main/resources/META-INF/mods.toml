@@ -12,15 +12,15 @@ version="1.15.2-1.0.0" #mandatory
 
 displayName="More Items Mod" #mandatory
 
-updateJSONURL="http://placeholder/" #optional
+updateJSONURL="http://myurl.me/" #optional
 
-displayURL="" #optional
+displayURL="http://example.com/" #optional
 
 logoFile="" #optional
 
 credits="" #optional
 
-authors="Mati" #optional
+authors="Mati, Shea" #optional
 
 description='''
 

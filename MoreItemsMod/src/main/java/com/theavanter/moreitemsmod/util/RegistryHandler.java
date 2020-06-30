@@ -5,6 +5,7 @@ import com.theavanter.moreitemsmod.blocks.*;
 import com.theavanter.moreitemsmod.items.*;
 
 import net.minecraft.block.Block;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -33,6 +34,8 @@ public class RegistryHandler
 	public static final RegistryObject<Item> RUBY_SHOVEL = ITEMS.register("ruby_shovel", () -> new ShovelItemBase(ItemTier.RUBY, -1.0f, -3.0f));
 	public static final RegistryObject<Item> RUBY_HOE = ITEMS.register("ruby_hoe", () -> new HoeItemBase(ItemTier.RUBY, -3.0f));
 
+	//Armour
+	public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register("ruby_helmet", () -> new ArmorBase(ArmorMaterial.RUBY, EquipmentSlotType.HEAD));
 	
 	
 	//Blocks
