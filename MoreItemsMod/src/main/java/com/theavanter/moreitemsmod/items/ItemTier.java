@@ -18,7 +18,7 @@ public enum ItemTier implements IItemTier
 	 
 	
 	//Custom Tiers
-	RUBY(4, 1500, 10.0F, 3.0F, 250, () -> 
+	RUBY(4, 1500, 15.0F, 3.0F, 250, () -> 
 	{
 		return Ingredient.fromItems(RegistryHandler.RUBY.get());
 	});
