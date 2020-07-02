@@ -32,8 +32,9 @@ public enum ArmorMaterial implements IArmorMaterial
 	private final LazyValue<Ingredient> REPAIR_MATERIAL;
 
 	
-	private ArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmount, int enchantability,
-			SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial) {
+	private ArmorMaterial(	String name, int maxDamageFactor, int[] damageReductionAmount, int enchantability, 
+							SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial) 
+	{
 		NAME = name;
 		MAX_DAMAGE_FACTOR = maxDamageFactor;
 		DAMAGE_REDUCTION_AMOUNT = damageReductionAmount;
@@ -58,21 +59,18 @@ public enum ArmorMaterial implements IArmorMaterial
 	@Override
 	public int getEnchantability() 
 	{
-		
 		return ENCHANTABILITY;
 	}
 
 	@Override
 	public SoundEvent getSoundEvent() 
 	{
-		
 		return SOUND_EVENT;
 	}
 
 	@Override
 	public Ingredient getRepairMaterial() 
 	{
-		
 		return REPAIR_MATERIAL.getValue();
 	}
 	
@@ -80,7 +78,6 @@ public enum ArmorMaterial implements IArmorMaterial
 	@Override
 	public String getName() 
 	{
-		
 		return NAME;
 	}
 
