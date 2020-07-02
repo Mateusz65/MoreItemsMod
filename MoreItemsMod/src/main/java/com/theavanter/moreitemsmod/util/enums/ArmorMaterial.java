@@ -1,4 +1,4 @@
-package com.theavanter.moreitemsmod.items;
+package com.theavanter.moreitemsmod.util.enums;
 
 import java.util.function.Supplier;
 
@@ -22,7 +22,6 @@ public enum ArmorMaterial implements IArmorMaterial
 		return Ingredient.fromItems(RegistryHandler.RUBY.get());	
 	});
 	
-	
 	private static final int [] MAX_DAMAGE = new int [] {16, 16, 16, 16};
 	private final String NAME;
 	private final int MAX_DAMAGE_FACTOR;
@@ -32,7 +31,6 @@ public enum ArmorMaterial implements IArmorMaterial
 	private final float TOUGHNESS;
 	private final LazyValue<Ingredient> REPAIR_MATERIAL;
 
-	
 	
 	private ArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmount, int enchantability,
 			SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial) {

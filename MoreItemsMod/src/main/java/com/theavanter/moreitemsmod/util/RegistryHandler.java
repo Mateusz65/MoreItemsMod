@@ -3,6 +3,7 @@ package com.theavanter.moreitemsmod.util;
 import com.theavanter.moreitemsmod.MoreItemsMod;
 import com.theavanter.moreitemsmod.blocks.*;
 import com.theavanter.moreitemsmod.items.*;
+import com.theavanter.moreitemsmod.util.enums.*;
 
 import net.minecraft.block.Block;
 import net.minecraft.inventory.EquipmentSlotType;

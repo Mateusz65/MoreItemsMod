@@ -1,4 +1,4 @@
-package com.theavanter.moreitemsmod.items;
+package com.theavanter.moreitemsmod.util.enums;
 
 import java.util.function.Supplier;
 
