@@ -17,7 +17,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 public enum ArmorMaterial implements IArmorMaterial
 {
 	//Custom Armour Materials
-	RUBY(MoreItemsMod.MOD_ID + ":ruby", 5, new int[] {7, 9, 11, 7}, 420, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 6.9F, () ->
+	RUBY(MoreItemsMod.MOD_ID + ":ruby", 5, new int[] {7, 9, 11, 7}, 42000, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F, () ->
 	{
 		return Ingredient.fromItems(RegistryHandler.RUBY.get());	
 	});

@@ -11,6 +11,10 @@
 	
 //Armour
 	"item.mim.ruby_helmet" : "Ruby Helmet",
+	"item.mim.ruby_chestplate" : "Ruby Chestplate",
+	"item.mim.ruby_leggings" : "Ruby Leggings",
+	"item.mim.ruby_boots" : "Ruby Boots",
+	
 
 //Blocks
 	"block.mim.ruby_block" : "Ruby Block",

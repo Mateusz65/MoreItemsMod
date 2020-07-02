@@ -23,7 +23,6 @@ public class RegistryHandler
 	{
 		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-
 	}
 	
 	//Items
@@ -35,9 +34,12 @@ public class RegistryHandler
 	public static final RegistryObject<Item> RUBY_SHOVEL = ITEMS.register("ruby_shovel", () -> new ShovelItemBase(ItemTier.RUBY, -1.0f, -3.0f));
 	public static final RegistryObject<Item> RUBY_HOE = ITEMS.register("ruby_hoe", () -> new HoeItemBase(ItemTier.RUBY, -3.0f));
 
-	//Armour
+	//Armours
 	public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register("ruby_helmet", () -> new ArmorBase(ArmorMaterial.RUBY, EquipmentSlotType.HEAD));
-	
+	public static final RegistryObject<Item> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate", () -> new ArmorBase(ArmorMaterial.RUBY, EquipmentSlotType.CHEST));
+	public static final RegistryObject<Item> RUBY_LEGGINGS = ITEMS.register("ruby_leggings", () -> new ArmorBase(ArmorMaterial.RUBY, EquipmentSlotType.LEGS));
+	public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register("ruby_boots", () -> new ArmorBase(ArmorMaterial.RUBY, EquipmentSlotType.FEET));
+
 	
 	//Blocks
 	public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
